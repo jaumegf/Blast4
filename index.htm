@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<!-- 
+	Knockout DOM binding sample with array
+	To check KnockOut documentation visit: http://knockoutjs.com/documentation/introduction.html
+ -->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Blast4</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <link href="./styles/board.css?v=20180116" rel="stylesheet" />
+        <link href="./styles/style.css?v=20180116" rel="stylesheet" />
+        <link href="./styles/theme-Blast4.css?v=20181116v2" rel="stylesheet" />
+        <link href="./styles/theme-Prime.css?v=20181016v2" rel="stylesheet" />
+        <link href="./styles/theme-Classic.css?v=20180116v2" rel="stylesheet" />
+    	<link href="./styles/theme-kids.css?v=20180116v2" rel="stylesheet" />
+        <link href="./styles/theme-Numbers.css?v=201801161" rel="stylesheet" />
+
+        <script src="./libraries/jquery-2.2.0.min.js"></script>
+        <script src="01_board.js?v=20180115"></script>
+        <script src="02_IA-00-Kids.js?v=20170821"></script>
+        <script src="02_IA-01-Easy.js?v=20170828"></script>
+        <script src="02_IA-02-Medium.js?v=20170828"></script>
+        <script src="03_AppController.js?v=20180116v2"></script>
+        <script src="03_controllerMode-01-Blast4.js?v=20180116v3"></script>
+        <script src="03_controllerMode-02-Kids.js?v=20180116v3"></script>
+        <script src="03_controllerMode-03-Prime.js?v=20180116v3"></script>
+    </head>
+    
+    
+ <body>
+
+
+     <div class ='menuContainer'>
+        <div id='menuIniContainer'>
+            <div class='buttonRow'>
+		        <input type="button"  class='btn Blast4Mode'  id="startGame" value="Blast4" onclick='startGame("blast4")' />
+            </div> 
+
+            <div class='buttonRow'>
+                <input type="button" class='btn Blast4PrimeMode' value="Prime" onclick='startGame("blast4Prime")' />
+            </div> 
+
+            <div  class='buttonRow'>
+		        <input type="button"  class='btn clasicMode' value="Classic" onclick='startGame("classic")' />
+            </div> 
+
+             <div class='buttonRow'>
+		        <input type="button"  class='btn kidsMode' value="Kids" onclick='startGame("junior")' />
+            </div> 
+
+            <div class='buttonRow'>
+		        <input type="button"  class='btn help'  value="Help" onclick='openMenuManualContainer()' />
+            </div> 
+        </div>	
+
+
+
+        <div id='menuManualContainer'>
+            <div>
+		        <ul>
+		          <li>Join 4 balls in a row..</li>
+		          <li class='bomb'>Watch out for the bombs. Take advantage of them. </li>
+		          <li class='bolaNegra'>Balls in full row will turn into black balls.</li>
+		          <li class='bolaNegra'>Black balls are annoying but also might help you a lot.</li>
+            </div>
+
+             <div  class='buttonRow' style='margin:40px 0px'>
+		        <input type="button" id="btnBackToMenu" class='btn' value="<< Back" onclick='backToMainMenu()' />
+            </div> 
+        </div>	
+
+		<!-- 
+			Binding for play again button and winner text when game ends 
+		-->
+        <div id='matchEndContainer'>
+            <div>
+	             <label class="endGame" data-bind="text:winner" />     
+            </div>
+            <div>
+                <img id="matchResult"  src="img/youLose2.png" />
+            </div>
+            <div>
+                <label id="outcomeSentence"></label>
+            </div>
+
+            <div class='buttonRow' style='margin:15px 0px'>
+		        <input type="button" id="playAgain" class='btn w220' value="Play" onclick='newMatch()' />
+            </div> 
+
+            <div class='buttonRow' style='margin:15px 0px'>
+		        <input type="button" id="backToMainMenu" class='btn w220' value="Back to menu" onclick='backToMainMenu()' />
+            </div> 
+        </div>
+    </div>
+
+
+    <div id="header" style="visibility: hidden;">
+       <!-- <p class='title'>Blast<strong>4</strong></p> -->
+
+        <div class='score'>
+            <label id="scoreUser">0</label> - <label id="scoreComputer">0</label>
+        </div>
+
+         <div class='icon' style="margin-left: 50px;">
+	<img class='soundIco' src="./img/loudspeaker.png" width="40px" onclick='switchSound();' />
+         </div>
+
+         <div  class='icon' style="margin-left: 20px;">
+	<img src="./img/home.png" width="40px" onclick='backToMainMenu();' />
+         </div>
+    </div>
+
+
+    <!-- It's bind to KO -->
+    <div class="board">
+        <table class="table table-bordered board">
+			<!--
+				Throw buttons. Notice the biding to userThrow method (when click)
+				and throwEnabled (full column)
+			-->
+            <thead>
+               <tr>
+                    <td><button data-bind="click: function(){userThrow(0);}, enable: throwEnabled(0)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(1);}, enable: throwEnabled(1)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(2);}, enable: throwEnabled(2)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(3);}, enable: throwEnabled(3)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(4);}, enable: throwEnabled(4)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(5);}, enable: throwEnabled(5)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(6);}, enable: throwEnabled(6)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(7);}, enable: throwEnabled(7)" type="button" />&#9660;</td>
+                    <td><button data-bind="click: function(){userThrow(8);}, enable: throwEnabled(8)" type="button" />&#9660;</td>
+                </tr>
+            </thead>
+			 <!-- 
+			    foreach bind render an array from modelView 
+				For more information, check knockout documentation: http://knockoutjs.com/documentation/foreach-binding.html
+				Notice the nestead foreach. One for rows and the other one for columns
+			 -->
+            <tbody data-bind="foreach: { data: board, as: 'row' }">
+                <tr data-bind="foreach: cols">
+                    <td><span data-bind="text: $data, attr:{'class': $data}" /></td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
+
+
+
+    <!-- link knockout library and the viewmodel after declare DOM binding -->
+    <script src="./libraries/knockout-2.1.0.js"></script>
+    <script src="10_KnockOutVM.js?v=20170811"></script>   
+    <script src="10_window.js?v=20180116"></script>
+ </body>
+</html>

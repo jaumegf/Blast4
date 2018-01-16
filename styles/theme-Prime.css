@@ -1,0 +1,44 @@
+﻿
+.ThemePrime table {
+background: linear-gradient(45deg, #b59589,  #dac9c2);
+opacity: 0.95;
+    border: 2px outset #f6d3d3;
+}
+
+ .ThemePrime span {
+	border: 1px inset whitesmoke;
+  background: none;
+  background-color: whitesmoke;
+    box-shadow: none;
+}
+
+
+#matchEndContainer.ThemePrime {
+    background-color: #b59589;
+}
+
+#matchEndContainer.ThemePrime .btn {
+     background: none;
+    background-color: #b59589;
+     box-shadow: 1px 1px #b59589;
+     height: 50px;
+    color: white;
+}
+
+
+        .ThemePrime span.B { /*bomb*/
+            background:url(../img/bomba.png) no-repeat;
+            color:transparent;
+    background-color: whitesmoke;
+        }
+
+        .ThemePrime span.BEO {
+                background:url(../img/boomO.png) no-repeat;
+                color:transparent;
+            }
+
+        .ThemePrime span.BEX { 
+                background:url(../img/boomX2.png) no-repeat;
+                color:transparent;
+            }
+

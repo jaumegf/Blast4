@@ -1,0 +1,55 @@
+﻿
+    #header.ThemeNumbers div.score label#scoreUser {
+        padding-left: 30px;
+        background:url(../img/bolaON25.png) no-repeat;
+        margin-right: 10px;
+    }
+
+    #header.ThemeNumbers div.score label#scoreComputer {
+        margin-left: 10px;
+        padding: 0px 30px;
+        background:url(../img/bolaXN25.png) no-repeat;
+    }
+
+
+            .ThemeNumbers span.O {
+                background:url(../img/bolaON.png) no-repeat;
+                color: transparent;  
+            }
+
+
+            .ThemeNumbers span.OW { /*Raval Winning ball*/
+	            background:url(../img/bolaOWN.png) no-repeat;
+	            color: transparent;  
+            }
+
+
+            .ThemeNumbers span.X{  /*IA PC*/
+                 background:url(../img/bolaXN.png) no-repeat;
+	            color: transparent;  
+            }
+
+
+
+            .ThemeNumbers span.XW{ /*IA PCW¡ Winning ball*/
+                 background:url(../img/bolaXWN.png) no-repeat;
+	            color: transparent;  
+            }
+
+
+ 
+
+.ThemeNumbers span.B { /*bomb*/
+    background: url(../img/bomba.jpg) no-repeat;
+    color: transparent;
+}
+
+.ThemeNumbers span.BEO {
+    background: url(../img/boomO.png) no-repeat;
+    color: transparent;
+}
+
+.ThemeNumbers  span.BEX {
+    background: url(../img/boomX2.png) no-repeat;
+    color: transparent;
+}

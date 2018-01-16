@@ -1,0 +1,79 @@
+﻿body.ThemeClassic {
+background:url(../img/background-classic.png) repeat;
+}
+
+.ThemeClassic table {
+background: none;
+background: linear-gradient(90deg, cadetblue,  lightblue);
+		border: 2px outset cadetblue;
+		box-shadow: 2px 2px cadetblue;
+}
+
+ .ThemeClassic span {
+  border: 1px inset white;
+  background: none;
+  background-color: white;
+}
+
+
+.ThemeClassic table td button { color: white; }
+
+#matchEndContainer.ThemeClassic {
+    background-color: cadetblue;
+}
+
+#matchEndContainer.ThemeClassic .btn {
+    background-color: cadetblue;
+     box-shadow: 1px 1px cadetblue;
+    height: 50px;
+color: white;
+}
+
+#header.ThemeClassic {
+   background-color: cadetblue;
+}
+
+#header.ThemeClassic  div.score label#scoreUser {
+    padding-left: 30px;
+    background: url(../img/bolaO25Classic.png?v=2) no-repeat;
+    background-position-y: 2px;
+    margin-right: 10px;
+}
+
+#header.ThemeClassic  div.score label#scoreComputer {
+    padding-left: 30px;
+    background: url(../img/bolaX25Classic.png?v=2) no-repeat;
+    background-position-y: 2px;
+    margin-right: 10px;
+}
+
+
+ .ThemeClassic span.O { /*Raval*/
+	        background:url(../img/bolaOClassic.png?v=2) no-repeat;
+	        color: transparent;  
+        }
+
+
+        .ThemeClassic span.OW { /*Raval Winning ball*/
+	        background:url(../img/bolaOClassicW.png?v=2) no-repeat;
+	        color: transparent;  
+        }
+
+        .ThemeClassic span.X{  /*IA PC*/
+             background:url(../img/bolaXClassic.png) no-repeat;
+	         color: transparent;  
+        }
+
+
+       .ThemeClassic span.XW { /*IA PCW¡ Winning ball*/
+             background:url(../img/bolaXClassicW.png) no-repeat;
+	        color: transparent;  
+        }
+
+        .ThemeClassic span.M { /*Muro*/ 
+	background-image: none;
+            color:transparent;
+  	border:0px;
+        	border-radius:0px;
+	box-shadow: none;
+        }

@@ -1,0 +1,104 @@
+﻿body.ThemeKids {
+  background:url(../img/background-kids.jpg) repeat;
+}
+
+.ThemeKids table {
+background: linear-gradient(45deg, #a52a2a, pink);
+		border: 2px outset #f6d3d3;
+		box-shadow: 2px 2px #f6d3d3;
+}
+
+ .ThemeKids span {
+  border: 1px inset whitesmoke;
+  background: none;
+  background-color: white;
+}
+
+
+.ThemeKids table td button { color: white; }
+
+#matchEndContainer.ThemeKids {
+    background-color: indianred;
+}
+
+
+#matchEndContainer.ThemeKids .btn {
+    background: none;
+    background-color: indianred;
+     box-shadow: 1px 1px indianred;
+    height: 50px;
+    color: white;
+}
+
+
+
+#header.ThemeKids {
+  background-color: lightpink;
+}
+
+    #header.ThemeKids div.score label#scoreUser {
+        padding-left: 30px;
+        background:url(../img/bolaOKids25.png) no-repeat;
+        margin-right: 10px;
+        background-position-y: 2px;
+    }
+
+    #header.ThemeKids div.score label#scoreComputer {
+        margin-left: 10px;
+        padding: 0px 30px;
+        background:url(../img/bolaXKids25.png) no-repeat;
+        background-position-y: 2px;
+    }
+
+            .ThemeKids span.O {
+                background:url(../img/bolaOkids.png) no-repeat;
+                color: transparent;  
+  background-color: papayawhip;
+            }
+
+
+            .ThemeKids span.OW { /*Raval Winning ball*/
+	            background:url(../img/bolaOWKids.png) no-repeat;
+	            color: transparent;  
+  background-color: papayawhip;
+            }
+
+
+            .ThemeKids span.X{  /*IA PC*/
+                 background:url(../img/bolaXKids.png) no-repeat;
+	            color: transparent;  
+              background-color: papayawhip;
+            }
+
+
+
+            .ThemeKids span.XW{ /*IA PCW¡ Winning ball*/
+                 background:url(../img/bolaXWKids.png) no-repeat;
+	            color: transparent;  
+  	  background-color: papayawhip;
+            }
+
+
+        .ThemeKids span.M { /*Muro*/ 
+              background:url(../img/bolaN.png) no-repeat;
+            color:transparent;
+        border: none;
+        }
+
+       
+            .ThemeKids span.B { /*bomb kids: worm */
+                    background:url(../img/bombaKids.png) no-repeat;
+                    color:transparent;
+  background-color: papayawhip;
+             }
+
+            .ThemeKids span.BEO { /*bomb kids: ñam ñam */
+                background:url(../img/boomOKids.png) no-repeat;
+                color:transparent;
+            }
+
+	.ThemeKids span.BEX { /*bomb kids: ñam ñam */
+                background:url(../img/boomXKids.png) no-repeat;
+                color:transparent;
+            }
+

@@ -1,0 +1,234 @@
+﻿body {
+    font-family: 'Segoe UI', Verdana;
+  background:url(../img/background-menu1.jpg) repeat;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+div.menuContainer {
+   display: block;
+   margin: 0px auto;
+   position: relative;
+   max-width: 350px;
+} 
+
+
+#header {
+    display:block;
+    margin:0px auto;
+    padding: 3px;
+    width: 345px;
+    text-align:left;
+    font-size:1.5em;
+    font-weight:bold;
+    color:#999;
+    background-color: white;
+    border: 0px outset white;
+    box-shadow: 2px 2px white;
+    border-radius: 10px; 
+    opacity: 0.85;
+    height: 40px;
+}
+
+    #header p.title {
+        display: inline;
+        font-style:italic;
+    }
+
+    #header p.title strong {
+       font-size: 1.7em;
+       font-style: normal;
+       display: inline;
+       color: lightgreen;
+    }
+
+    #header div.score {
+        font-size: 1.2em;
+        font-style: normal;
+        font-weight: bold;
+        display: none;
+        color: white;
+    }
+
+    #header div.score label#scoreUser {
+        padding-left: 30px;
+        background:url(../img/bolaO25.png?v=2) no-repeat;
+        background-position-y: 7px;
+        margin-right: 10px;
+    }
+
+    #header div.score label#scoreComputer {
+        margin-left: 10px;
+        padding: 0px 30px;
+        background:url(../img/bolaX25.png) no-repeat;
+       background-position-y: 7px;
+    }
+
+#header div.icon {
+display: inline-block;
+}
+
+#header div.icon:hover {
+	cursor: pointer;
+}
+
+#menuIniContainer {
+	position: absolute;
+    display: inline-block;
+	top: 60px;
+	left: 0px;
+	width: 100%;
+	height: 360px;
+	box-shadow: 2px 4px #f6d3d3;
+  background:url(../img/background-menu2.png) repeat;
+border-radius:15px;
+}
+
+#menuManualContainer {
+	position: absolute;
+    display: none;
+	opacity: 0.85;
+	width: 330px;
+	height: 370px;
+	top: 60px;
+	left: 5px;
+	padding: 5px 5px;
+	border-radius:15px;
+	box-shadow: 2px 4px #f6d3d3;
+	background-color: white;
+}
+
+
+#menuIniContainer div {
+	width: 100%;
+	text-align: left;
+}
+
+
+ul li  { 
+	margin: 15px 3px; font-size: 1.25em; 
+	color: #444;
+	font-family: 'Segoe UI';
+}
+
+ul {
+    list-style-image: url('../img/bolaO20.png');
+}
+
+ul li.bomb {
+    list-style-image: url('../img/bomba20.jpg');
+}
+
+ul li.bolaNegra {
+    list-style-image: url('../img/bolaN20.png?v=2');
+}
+
+ul li.bombPrime {
+    list-style-image: url('../img/bombaPrime20.png');
+}
+
+
+#matchEndContainer {
+	display: none;
+	position: absolute;
+	opacity: 0.87;
+	width: 290px;
+	height: 330px;
+	top: 90px;
+	left: 20px;
+	padding: 10px;
+	background-color: black;
+	border-radius:15px;
+	border: 1px solid #555;
+	box-shadow: 2px 2px #555;
+	z-index: 100;
+}
+
+    #matchEndContainer div {
+	    width: 100%;
+	    text-align: center;
+	    margin-top:10px;
+    }
+
+
+    label.endGame {
+        display:inline-block;
+        font-size:1.8em;
+        font-weight:bold;
+        color:white;
+    }
+
+    label#outcomeSentence {
+        padding: 5px 10px;
+        text-align: left;
+        display:inline-block;
+        font-size:0.85em;
+        font-weight:bold;
+        color: white;
+    }
+
+
+div.buttonRow {
+    padding:0px 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+
+.btn {
+	width: 305px;
+	margin-left: 0px;
+	text-align: center;
+	padding: 10px;
+	font-weight: bold;
+              background: linear-gradient(90deg, cadetblue, lightblue);
+              box-shadow: 1px 1px cadetblue;
+	font-size: 1.5em;
+	color: white;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
+#menuIniContainer .btn {
+	width: 230px;
+	margin-left: 70px;
+
+}
+    .btn.w220 {
+        width: 220px;
+    }
+
+.btn.Blast4Mode {
+}
+
+.btn.Blast4PrimeMode {
+}
+
+.btn.kidsMode{
+
+}
+
+.btn.clasicMode {
+
+}
+
+
+.btn.help{
+}
+
+
+
+.btn.help{
+   border: solid 0px #666;
+}
+
+
+.btn#btnBackToMenu {
+   border: solid 2px #666;
+   height: 60px;
+   color: white;
+}
+
+
+
