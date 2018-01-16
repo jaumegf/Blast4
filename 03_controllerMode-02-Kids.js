@@ -252,13 +252,13 @@ function ControllerMode_02(_interfaceKO) {
 
     self.showOutcomeSentence = function () {
         if (window.score.computer > window.score.user ) {
-            $('#outcomeSentence').html("Try it again..");
+            $('#outcomeSentence').html("Try it again...");
         } else if (window.score.computer == window.score.user) {
-            $('#outcomeSentence').html("We’re tied, that’s very interesting..");
+            $('#outcomeSentence').html("We’re tied, this is getting exciting...");
         } else if (window.score.computer == window.score.user - 1) {
-            $('#outcomeSentence').html("Let’s go!! Will you keep this advantage?");
+            $('#outcomeSentence').html("Let’s go! Will you keep this advantage?");
         } else if (window.score.computer < window.score.user) {
-            $('#outcomeSentence').html("You’re so good!!");
+            $('#outcomeSentence').html("You’re so good!");
         }
     }
 

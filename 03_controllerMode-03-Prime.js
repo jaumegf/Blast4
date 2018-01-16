@@ -454,37 +454,37 @@ function ControllerMode_03(_interfaceKO) {
     self.showOutcomeSentence = function () {
 
         if (window.score.computer == 0 && window.score.user == 1) {
-            $('#outcomeSentence').html("Let’s go!! The first to score 4 points, win the match.");
+            $('#outcomeSentence').html("Let’s go! The first one to score 4 points wins the match.");
             return;
         }
 
         if (window.score.computer == 1 && window.score.user == 0) {
-            $('#outcomeSentence').html("Wake up!! The first to score 4 points, win the match.");
+            $('#outcomeSentence').html("Wake up!! The first one to score 4 points wins the match.");
             return;
         }
 
         if (window.score.computer == 0 && window.score.user == 2) {
-            $('#outcomeSentence').html("Let’s go!! Dare you to win 4 matches in a row?.");
+            $('#outcomeSentence').html("Let’s go!! I dare you to win 4 matches in a row!");
             return;
         }
 
         if (window.score.computer == 4) {
-            $('#outcomeSentence').html("I Win. You better try to beat me in kids mode.");
+            $('#outcomeSentence').html("I win. If you can’t beat me, practice with the kids mode.");
             return;
         }
 
         if (window.score.computer == 0 && window.score.user == 4) {
-            $('#outcomeSentence').html("Excellent!! You achived the goal!!");
+            $('#outcomeSentence').html("Excellent! You made it!");
             return;
         }
 
         if (window.score.user == 4) {
-            $('#outcomeSentence').html("Congratulations!! You win the match!!");
+            $('#outcomeSentence').html("Congratulations! You win the match!");
             return;
         }
 
         if (window.score.user == 2) {
-            $('#outcomeSentence').html("Let’s go!! Will you beat me in numbers mode?");
+            $('#outcomeSentence').html("Let’s go! Will you beat me in numbers mode?");
             return;
         }
 
@@ -492,9 +492,9 @@ function ControllerMode_03(_interfaceKO) {
         if (window.score.computer == 3 && window.score.user ==0) {
             $('#outcomeSentence').html("Have you tried kids mode?");
         } else if (window.score.computer == window.score.user + 1 || window.score.computer == window.score.user + 2) {
-            $('#outcomeSentence').html("I’ll take it easy, it’s beeing so hard for you.");
+            $('#outcomeSentence').html("I’ll make it easier for you so that you can do it");
         } else if (window.score.computer == window.score.user) {
-            $('#outcomeSentence').html("We’re tied, that’s very interesting..");
+            $('#outcomeSentence').html("We’re tied, this is getting exciting...");
         } else if (window.score.computer == window.score.user - 2) {
             $('#outcomeSentence').html("Let’s go!! Will you keep this advantage?");
         } else if (window.score.computer < window.score.user) {
