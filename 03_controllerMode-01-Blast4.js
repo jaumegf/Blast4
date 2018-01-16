@@ -100,7 +100,7 @@ function ControllerMode_01(_interfaceKO, _mode) {
 
         self.throwEffect = THROW_EFFECT_INI;
         if (self.getMode() == 'classic')
-	         self.throwEffect = 'off'; // { on, off }
+	         self.throwEffect = 'on'; // { on, off }
     }
 
 
