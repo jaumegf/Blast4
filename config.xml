@@ -8,6 +8,6 @@
     <content src="index.html" />
     <access origin="*" />
     <engine name="android" spec="~7.0.0" />  
-  <icon src="img/appIco.png" />
+  <icon src="img/appico2.png" />
 
 </widget>
