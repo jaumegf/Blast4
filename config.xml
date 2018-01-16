@@ -2,11 +2,12 @@
 <widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Blast4</name>
     <description>
- More than a Four in a Row   </description>
-    <author email="jaumegonzalezfrances@gmail.com">
-  Jaume González Francés  </author>
+ More than a Four in a Row   
+ </description>
+    <author email="jaumegonzalezfrances@gmail.com">  Jaume Gonzalez Frances  </author>
     <content src="index.html" />
     <access origin="*" />
-    <engine name="android" spec="~7.0.0" />   <icon src="img/bolaO90.png" />
+    <engine name="android" spec="~7.0.0" />  
+  <icon src="img/bolaO90.png" />
 
 </widget>
