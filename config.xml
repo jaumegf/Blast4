@@ -1,15 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="blas4.jaumegf" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
-    versionCode="20001"
-    version="2.0.0.0.1" >
+    versionCode="20001"  version="2.0.0.0.1">
     <name>Blast4</name>
-    <description>
- More than a Four in a Row   
- </description>
+    <description>More than a Four in a Row</description>
     <author email="jaumegonzalezfrances@gmail.com">  Jaume Gonzalez Frances  </author>
     <content src="index.html" />
     <access origin="*" />
     <engine name="android" spec="~7.0.0" />  
   <icon src="img/appico2.png" />
-
 </widget>
