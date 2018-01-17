@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="blas4.jaumegf" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
- android-versionCode="10001"
+ android-versionCode="10002"
     version     = "1.0.0.1" >
     <name>Blast4</name>
     <description>
