@@ -6,6 +6,7 @@
 background: linear-gradient(45deg, #b59589,  #dac9c2);
 opacity: 0.95;
 border: 2px outset #f6d3d3;
+box-shadow: 2px 2px #f6d3d3;
 }
 
 
