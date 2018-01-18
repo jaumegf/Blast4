@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="blas4.jaumegf" version="2.0.0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="blas4.jaumegf" version="2.0.0.0.2" versionCode="20002" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Blast4</name>
     <description>More than a Four in a Row</description>
     <author email="jaumegonzalezfrances@gmail.com">  Jaume Gonzalez Frances  </author>
