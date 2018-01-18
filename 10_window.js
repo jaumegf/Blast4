@@ -23,7 +23,7 @@ $("img.soundIco").attr("style", "opacity: " + (window.soundOn ? 1 : 0.4));
 }
 
 
-window.audioBomb = new Audio('./sound/bomb.mp3');
+window.audioBomb = new Audio('./sound/bomb.wav');
 window.audioBombKids = new Audio('./sound/bombkids.mp3');
 window.audioFullRow = new Audio('./sound/blackrow.mp3');
 window.audioWin = new Audio('./sound/youwin.mp3');
