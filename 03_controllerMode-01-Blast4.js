@@ -338,7 +338,7 @@ function ControllerMode_01(_interfaceKO, _mode) {
     }
 
     self.showYouLose = function () {
-        var audio = new Audio('./sound/youlose.mp3');
+        $('#matchResult').attr('src', './img/youLose2.png');
         window.playAudio(window.audioLose);
         _interfaceKO.winner("I Win");
 
