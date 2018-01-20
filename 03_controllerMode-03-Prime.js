@@ -176,7 +176,7 @@ function ControllerMode_03(_interfaceKO) {
             $("#matchEndContainer").addClass("ThemeBlast4");
 
             //if user scorer is equal to 2. ThemeNumber
-            if (window.score.user == 2 || true) {
+            if (window.score.user == 2) {
                 $("div.board").addClass("ThemeNumbers");
                 $("#header").addClass("ThemeNumbers");
             } else {
