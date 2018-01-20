@@ -117,6 +117,7 @@ function ControllerMode_03(_interfaceKO) {
             return;
         }
 
+
         if (window.score.matches == 0) {
             self.setMode('blast4');
         } else {
@@ -150,24 +151,32 @@ function ControllerMode_03(_interfaceKO) {
         //changes themes according to scorer. 
         $("#header").removeClass("ThemeKids");
         $("#header").removeClass("ThemeNumbers");
-        $("#header").removeClass("ThemeClassic");
-        $("div.board").removeClass("ThemePrime");
-        $("div.board").removeClass("ThemeNumbers");
-        $("div.board").removeClass("ThemeKids");
-        $("div.board").removeClass("ThemeClassic");
+        $("#header").removeClass("ThemeClassic")
+        $("div.board").removeClass("ThemePrime"); $("div.board").removeClass("ThemeNumbers");
+        $("div.board").removeClass("ThemeKids"); $("div.board").removeClass("ThemeClassic");
 
+        $("#matchEndContainer").removeClass("ThemeKids"); $("#matchEndContainer").removeClass("ThemePrime");
+        $("#matchEndContainer").removeClass("ThemeBlast4"); $("#matchEndContainer").removeClass("ThemeClassic");
+
+        $("body").removeClass("ThemeBlast4"); $("body").removeClass("ThemeKids");
+        $("body").removeClass("ThemePrime");$("body").removeClass("ThemeClassic");
  
         //window.score.computer = 3;
         if (window.score.computer == 3 && window.score.user == 0) {
             // if computer scorer is equal to 3, and user score is 0.
             // apply theme kids.
+            $("body").addClass("ThemeKids");
             $("div.board").addClass("ThemeKids");
             $("#header").addClass("ThemeKids");
+            $("#matchEndContainer").addClass("ThemeKids");
 
 	        self.changeIA(1);
         } else {
+            $("body").addClass("ThemeBlast4");
+            $("#matchEndContainer").addClass("ThemeBlast4");
+
             //if user scorer is equal to 2. ThemeNumber
-            if (window.score.user == 2) {
+            if (window.score.user == 2 || true) {
                 $("div.board").addClass("ThemeNumbers");
                 $("#header").addClass("ThemeNumbers");
             } else {
@@ -177,17 +186,10 @@ function ControllerMode_03(_interfaceKO) {
         }
 
         if (self.getMode() == 'classic') {
-            $("#header").removeClass("ThemeKids");
-            $("#header").removeClass("ThemeNumbers");
-            $("#header").removeClass("ThemeClassic");
-
-            $("div.board").removeClass("ThemePrime");
-            $("div.board").removeClass("ThemeNumbers");
-            $("div.board").removeClass("ThemeKids");
-            $("div.board").removeClass("ThemeClassic");
-
+            $("body").addClass("ThemeClassic");
             $("#header").addClass("ThemeClassic");
             $("div.board").addClass("ThemeClassic");
+            $("#matchEndContainer").addClass("ThemeClassic");
 	        self.changeIA(2, window.score.user>=window.score.computer);
         }
 

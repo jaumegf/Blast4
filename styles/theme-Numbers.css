@@ -42,14 +42,15 @@
 .ThemeNumbers span.B { /*bomb*/
     background: url(../img/bomba.png) no-repeat;
     color: transparent;
+    background-color: whitesmoke;
 }
 
 .ThemeNumbers span.BEO {
-    background: url(../img/boomO.png) no-repeat;
+    background: url(../img/boomON.png) no-repeat;
     color: transparent;
 }
 
 .ThemeNumbers  span.BEX {
-    background: url(../img/boomX2.png) no-repeat;
+    background: url(../img/boomXN.png) no-repeat;
     color: transparent;
 }
